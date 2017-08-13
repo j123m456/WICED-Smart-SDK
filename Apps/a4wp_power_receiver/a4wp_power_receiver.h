@@ -98,7 +98,7 @@
 #define BLEPRU_RESERVED_b                           0xE0
 
 // A4WP PRU ADV service data payload format
-PACKED struct t_BLEPRU_ADV_PAYLOAD
+ struct t_BLEPRU_ADV_PAYLOAD
 {
     UINT16  wpt_service_uuid;
     UINT16  gatt_primary_service_handle;
@@ -108,7 +108,7 @@ PACKED struct t_BLEPRU_ADV_PAYLOAD
 typedef struct t_BLEPRU_ADV_PAYLOAD BLEPRU_ADV_PAYLOAD;
 
 // A4WP PRU Static parameter format
-PACKED struct t_BLEPRU_PRU_STATIC
+ struct t_BLEPRU_PRU_STATIC
 {
     UINT8  optional_fields;
     UINT8  rev;
@@ -127,7 +127,7 @@ PACKED struct t_BLEPRU_PRU_STATIC
 typedef struct t_BLEPRU_PRU_STATIC BLEPRU_PRU_STATIC;
 
 // A4WP PRU Dynamic parameter format
-PACKED struct t_BLEPRU_PRU_DYNAMIC
+ struct t_BLEPRU_PRU_DYNAMIC
 {
     UINT8  optional_fields;
     UINT16 v_rect;
@@ -144,11 +144,11 @@ PACKED struct t_BLEPRU_PRU_DYNAMIC
 typedef struct t_BLEPRU_PRU_DYNAMIC BLEPRU_PRU_DYNAMIC;
 
 // PRU Control characteristic value format
-PACKED struct t_BLEPRU_PRU_CTRL_CHAR_VAL
+ struct t_BLEPRU_PRU_CTRL_CHAR_VAL
 {
-    PACKED union
+     union
     {
-        PACKED struct 
+         struct 
         {
             UINT8  rfu:4;
             UINT8  pwrcmd:2;

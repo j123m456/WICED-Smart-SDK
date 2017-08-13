@@ -310,7 +310,7 @@ static BLEPRU_PRU_STATIC blepru_pru_static  =
     0x08,   // Capabilites of PRU,
     0x01,   // HW rev
     0x01,   // SW rev
-    0x32,   // Prect_max
+    0x32,   // Prect_max 50*0.1W=5w
     0x157C, // Vrect_min, 5500mV
     0x3C23, // Vrect_high, 15395mV
     0x2710, // Vrect_set,  10000mV
@@ -324,17 +324,17 @@ static BLEPRU_PRU_STATIC blepru_pru_static  =
 // default PRU dynamic parameter
 static BLEPRU_PRU_DYNAMIC blepru_pru_dynamic =
 {
-    0xFC,
-    0x2710,
-    0x01F4,
-    0x1388,
-    0x03E8,
-    0x3c,
-    0x1388,
-    0x2710,
-    0x3A98,
-    0x00,
-    { 0x0, 0x0, 0x0 }
+    0xFC,   // Optional fields validity
+    0x2710, // Vrect , 10000mV
+    0x01F4,  // Irect ,500mA
+    0x1388, //Vout ,5000mV
+    0x03E8, //Iout ,1000mA
+    0x3c,//Temp,60C
+    0x1388,  //Vrect_min_Dyn ,5000mV
+    0x2710,  //Vrect_set_Dyn ,10000mV
+    0x3A98,  //Vrect_set_Dyn ,15000mV
+    0x00,  // alert
+    { 0x0, 0x0, 0x0 } //RFU (3 octets)
 };
 
 // Following variables are in ROM
