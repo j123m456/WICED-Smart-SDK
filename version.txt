@@ -1,0 +1,2 @@
+WICED-Smart-SDK Version: WicedSmart_002.001.001.0056
+037ca1f22611a5af719fc9cfb28082ea4c61583a

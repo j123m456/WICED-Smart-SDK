@@ -1,0 +1,24 @@
+---- BLE_ADV_FIELD Matches (23 in 10 files) ----
+A4wp_power_receiver.c (apps\a4wp_power_receiver):    BLE_ADV_FIELD       adv_field[2];
+A4wp_power_transmitter.c (apps\a4wp_power_transmitter):    BLE_ADV_FIELD       *p_field;
+A4wp_power_transmitter.c (apps\a4wp_power_transmitter):        p_field = (BLE_ADV_FIELD *)ptr;
+Blebat.c (wiced-smart\bleapp\app):    BLE_ADV_FIELD     a[5];
+Blebat.c (wiced-smart\bleapp\app):            extern BLE_ADV_FIELD *bleprofile_p_adv;
+Blecen.c (wiced-smart\bleapp\app):    BLE_ADV_FIELD *p_field;
+Blecen.c (wiced-smart\bleapp\app):        p_field = (BLE_ADV_FIELD *)ptr;
+Blegm.c (wiced-smart\bleapp\app):    BLE_ADV_FIELD adv[4];
+Bleprofile.h (include):} BLE_ADV_FIELD;
+Bleprofile.h (include):void bleprofile_GenerateADVData(BLE_ADV_FIELD *p_adv, UINT8 number);
+Bleprofile.h (include):void bleprofile_GenerateScanRspData(BLE_ADV_FIELD *p_adv, UINT8 number);
+Bleprofile.h (wiced-smart\bleapp\lestack\profile):} BLE_ADV_FIELD;
+Bleprofile.h (wiced-smart\bleapp\lestack\profile):void bleprofile_GenerateADVData(BLE_ADV_FIELD *p_adv, UINT8 number);
+Bleprofile.h (wiced-smart\bleapp\lestack\profile):void bleprofile_GenerateScanRspData(BLE_ADV_FIELD *p_adv, UINT8 number);
+Bleprofile_8h.html (doc\api):<tr class="memitem:aa6f9dbb612a6ace81cfacdd496405666"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>BLE_ADV_FIELD</b></td></tr>
+Bleprofile_8h.html (doc\api):<tr class="memitem:ga14c7a5e36a1cfee8dee3146f7ba3c6a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bleprofile.html#ga14c7a5e36a1cfee8dee3146f7ba3c6a7">bleprofile_GenerateADVData</a> (BLE_ADV_FIELD *p_adv, UINT8 number)</td></tr>
+Bleprofile_8h.html (doc\api):<tr class="memitem:gada94c4a3cd50b44344320fa391d7cba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bleprofile.html#gada94c4a3cd50b44344320fa391d7cba3">bleprofile_GenerateScanRspData</a> (BLE_ADV_FIELD *p_adv, UINT8 number)</td></tr>
+Blesd.c (tools\wcg\cpy):    	BLE_ADV_FIELD adv[3];
+Blesd.c (tools\wcg\cpy):        BLE_ADV_FIELD scr[1];
+Group__bleprofile.html (doc\api):<tr class="memitem:ga14c7a5e36a1cfee8dee3146f7ba3c6a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bleprofile.html#ga14c7a5e36a1cfee8dee3146f7ba3c6a7">bleprofile_GenerateADVData</a> (BLE_ADV_FIELD *p_adv, UINT8 number)</td></tr>
+Group__bleprofile.html (doc\api):<tr class="memitem:gada94c4a3cd50b44344320fa391d7cba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bleprofile.html#gada94c4a3cd50b44344320fa391d7cba3">bleprofile_GenerateScanRspData</a> (BLE_ADV_FIELD *p_adv, UINT8 number)</td></tr>
+Group__bleprofile.html (doc\api):          <td class="paramtype">BLE_ADV_FIELD *&#160;</td>
+Group__bleprofile.html (doc\api):          <td class="paramtype">BLE_ADV_FIELD *&#160;</td>
